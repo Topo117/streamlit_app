@@ -12,7 +12,7 @@ st.sidebar.write("* Héctor Raúl Huarcaya Chipana")
 st.sidebar.write("* Oscar Manuel Herrera Tumba")
 
 menu_options = [
-    "Default - Información inicial",
+    "Información inicial",
     "Provincias con mayor población sin cobertura de agua",
     "Distribución del porcentaje de cobertura en todos los distritos",
     "Relación entre población total y porcentaje de cobertura en distritos",
@@ -33,7 +33,7 @@ data['PORCENTAJE_SIN_COBERTURA'] = (data['POBLACION_SIN_COBERTURA'] / data['TOTA
 
 if menu_selection == "Información inicial":
     st.title("Cobertura de agua potable del departamento de Cusco del Perú")
-    st.image("placeholder.png", use_container_width=True)
+    st.image("placeholder.png", width=100, use_container_width=True)
     st.write("""
         La base de datos de la cobertura en los servicios de agua potable en el departamento de Cusco corresponde a la información de los indicadores de cobertura del departamento mencionado. Dicha información, recopila la información de cobertura de agua potable de los distritos del departamento que se encuentra en el país del Perú.
         La información fue proporcionada por la plataforma nacional de datos libres del gobierno del Perú.
